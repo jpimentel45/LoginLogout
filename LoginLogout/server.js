@@ -58,7 +58,7 @@ app.engine(
 );
 app.set("view engine", ".hbs");
 
-app.listen(5000, function(err) {
+app.listen(process.env.PORT || 5000, function(err) {
   if (!err) console.log("Site is live");
   else console.log(err);
 });
